@@ -1,0 +1,11 @@
+ALTER TABLE orders
+ADD comments NVARCHAR(500);
+GO
+
+ALTER TABLE Products
+DROP CONSTRAINT CK__Products__stock__60A75C0F;
+GO
+
+ALTER TABLE Products
+DROP COLUMN stock;
+GO
